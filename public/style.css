@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Amita:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200&family=Quicksand:wght@300;400;600;700&family=Roboto&display=swap");
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0, 20px;
+  font-family: "ABeeZee", sans-serif;
+  font-family: "Amita", serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+#title {
+  font-weight: 700px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+nav li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+nav p,
+nav a {
+  color: #777;
+  font-weight: 300;
+}
+
+footer {
+  color: #777;
+  text-align: center;
+  margin: 80px auto 20px;
+}
+h2 {
+  margin-bottom: 40px;
+}
+h3 {
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.content {
+  margin-left: 20px;
+}
+
+.create-blog form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.create-blog input,
+.create-blog textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+textarea {
+  height: 120px;
+}
+
+.create-blog button {
+  margin-top: 20px;
+  background: crimson;
+  color: white;
+  padding: 6px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 150px;
+}
+
+/*Index styles*/
+.blogs a {
+  display: block;
+  margin: 40px 0;
+  padding-left: 30px;
+  color: black;
+  border-left: 6px solid crimson;
+}
+
+.blogs a:hover h3 {
+  color: crimson;
+}
+
+/*Details Style*/
+.details {
+  position: relative;
+}
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.delete:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
