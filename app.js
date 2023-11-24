@@ -124,6 +124,10 @@ app.get("/blogs", (req, res) => {
     });
 });
 
+app.get("/blogs/create", (req, res) => {
+  res.render("create", { title: "create a new Blog" });
+});
+
 app.post("/blogs", (req, res) => {
   const blog = new Blog(req.body);
   blog
@@ -156,10 +160,6 @@ app.delete("/blogs/:id", (req, res) => {
     .catch((err) => {
       console.log(err);
     });
-});
-
-app.get("/blogs/create", (req, res) => {
-  res.render("create", { title: "create a new Blog" });
 });
 
 app.use((req, res) => {
